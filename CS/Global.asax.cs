@@ -14,7 +14,7 @@ namespace WebApplication18 {
 
         protected void Application_Start(object sender, EventArgs e) {
             DashboardFileStorage newDashboardStorage = new DashboardFileStorage(@"~/App_Data/Dashboards");
-            DashboardService.SetDashboardStorage(newDashboardStorage);
+            DashboardConfigurator.Default.SetDashboardStorage(newDashboardStorage);
         }
     }
 }
