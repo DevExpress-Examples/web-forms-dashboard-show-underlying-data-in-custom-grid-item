@@ -6,7 +6,7 @@
 
 # Dashboard for Web Forms - How to show underlying data in a custom grid dashboard item
 
-This example illustrates how to create a custom grid dashboard item to show underlying data that it is possible to get using the [RequestUnderlyingData](https://docs.devexpress.com/Dashboard/js-ASPxClientDashboard#js_aspxclientdashboard_requestunderlyingdata_itemname_args_oncompleted_) method.
+This example illustrates how to create a custom grid dashboard item to show underlying data that it is possible to get using the [ViewerApiExtension.requestUnderlyingData](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension#js_devexpress_dashboard_viewerapiextension_requestunderlyingdata) method.
 
 ## Files to Look At
 
