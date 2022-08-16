@@ -8,10 +8,10 @@
 //------------------------------------------------------------------------------
 
 namespace WebApplication18 {
-    
-    
+
+
     public partial class Default {
-        
+
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -20,7 +20,7 @@ namespace WebApplication18 {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-        
+
         /// <summary>
         /// ASPxDashboardDesigner1 control.
         /// </summary>

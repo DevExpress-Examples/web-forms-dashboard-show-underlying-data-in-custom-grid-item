@@ -1,4 +1,4 @@
-window.MyDashboardGrid = (function () {
+var MyDashboardGrid = (function () {
 	var Dashboard = DevExpress.Dashboard;
 	var dxDataGrid = DevExpress.ui.dxDataGrid;
 
@@ -57,10 +57,11 @@ window.MyDashboardGrid = (function () {
 				
 			//Prepare parameters
 			var requestParameters = {
-				DataMembers: requestedDataMembers,
-				AxisPoints: []
+				dataMembers: requestedDataMembers,
+				axisPoints: []
 			};
-				
+
+			debugger;
 			//Request underlying data and fill a data source
 			this.viewerApiExtension && this.viewerApiExtension.requestUnderlyingData(this.getName(), requestParameters, function (data) {
 				var underlyingData = [];

@@ -1,13 +1,11 @@
-Imports System
-Imports System.Web.UI
-Imports System.Web.UI.WebControls
+﻿Imports System
 
 Namespace WebApplication18
+	Partial Public Class [Default]
+		Inherits System.Web.UI.Page
 
-    Public Partial Class [Default]
-        Inherits Page
+		Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
 
-        Protected Sub Page_Load(ByVal sender As Object, ByVal e As EventArgs)
-        End Sub
-    End Class
+		End Sub
+	End Class
 End Namespace

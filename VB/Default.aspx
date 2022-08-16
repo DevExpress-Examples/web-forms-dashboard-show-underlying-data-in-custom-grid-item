@@ -1,30 +1,25 @@
-<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="WebApplication18.Default" %>
-
-<%@ Register Assembly="DevExpress.Dashboard.v22.1.Web.WebForms, Version=22.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.DashboardWeb" TagPrefix="dx" %>
+﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb" Inherits="WebApplication18.Default" %>
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head runat="server">
-    <title></title>
-
-    <script type="text/javascript">
-        function onBeforeRender(s, e) {
-            var dashboardControl = s.getDashboardControl();
-            dashboardControl.registerExtension(new MyDashboardGrid(dashboardControl));
-        }
+	<title></title>
+	<script type="text/javascript">
+		function onBeforeRender(s, e) {
+            var dashboardControl = s.GetDashboardControl();
+			dashboardControl.registerExtension(new MyDashboardGrid(dashboardControl));
+		}
     </script>
-
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <dx:ASPxDashboard ID="ASPxDashboardDesigner1" ClientInstanceName="webDashboard" runat="server" UseDashboardConfigurator="true">
-                <ClientSideEvents BeforeRender="onBeforeRender" />
-            </dx:ASPxDashboard>
-
-            <script src="Scripts/CustomGridExtension.js"></script>
-        </div>
-    </form>
+	<form id="form1" runat="server">
+		<div>
+			<dx:ASPxDashboard ID="ASPxDashboardDesigner1" ClientInstanceName="webDashboard" runat="server" UseDashboardConfigurator="true">
+				<ClientSideEvents BeforeRender="onBeforeRender" />
+			</dx:ASPxDashboard>
+			<script src="Scripts/CustomGridExtension.js"></script>
+		</div>
+	</form>
 </body>
 </html>
