@@ -6,7 +6,9 @@
 
 # Dashboard for Web Forms - How to show underlying data in a custom grid dashboard item
 
-This example illustrates how to create a custom grid dashboard item to show underlying data that it is possible to get using the [ViewerApiExtension.requestUnderlyingData](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension#js_devexpress_dashboard_viewerapiextension_requestunderlyingdata) method.
+This example illustrates how to create a custom grid dashboard item based on the [dxDataGrid](https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxDataGrid/) UI component. The [ViewerApiExtension.requestUnderlyingData](https://docs.devexpress.com/Dashboard/js-DevExpress.Dashboard.ViewerApiExtension#js_devexpress_dashboard_viewerapiextension_requestunderlyingdata) method is used to get the underlying data and then show this data in `dxDataGrid`.
+
+![custom grid item](custom-grid-item.png)
 
 ## Files to Look At
 
