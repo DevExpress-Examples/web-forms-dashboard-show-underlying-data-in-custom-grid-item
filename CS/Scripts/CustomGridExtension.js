@@ -36,7 +36,7 @@ var MyDashboardGrid = (function () {
 	class Viewer extends Dashboard.CustomItemViewer {
 		constructor(dashboardControl, model, container, options) {
 			super(model, container, options);
-			this.viewerApiExtension = dashboardControl.findExtension('viewer-api');
+			this.viewerApiExtension = dashboardControl.findExtension('viewerApi');
 		}
 		renderContent($element, changeExisting) {
 			//Dimensions and Measures
